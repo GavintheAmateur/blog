@@ -13,26 +13,18 @@ header-img: "img/about-bg.jpg"
 
 <!-- Chinese Version -->
 <div class="zh post-container" >
-        我，爱马拉松，学游泳，准备玩铁三。<br>
-        <div>
-
-        <div class="half" >
-    <img src="1.jpg" style="float:left; width:200; height:250"/>
-    <img src="2.jpg" style="float:left; width:200; height:250"/>
-</div>
-
-        <!-- <img src="1.jpg"  style="display: inline; float: right; width:200px; height:150px">
-        <img src="2.jpg"  style="float: right; width:200px; height:150px"><br>
-        </div> -->
-        我，不会唱歌，学钢琴，想会写手歌。<br>
-        我，是文科生，学编程，想做个网站。<br>
-        世界那么大，我想去看看。<br>
+        我，爱马拉松，学游泳，准备玩铁三。
+        我，不会唱歌，学钢琴，想会写手歌。
+        我，是文科生，学编程，想做个网站。
         一万年太短，白驹过隙间。
+        世界那么大，我想去看看。
 </div>
-I'm a runner. I learnt swimming to race triathlon;
-I can't carry a tune. I want to learn music to be a songwriter;
+<div class="en post-container" >
+I'm a runner. I learnt swimming to race triathlon.
+I can't carry a tune. I want to learn music to be a songwriter.
 I major in arts. I'm learning coding to build a website.
-I'm Gavin, I'm a learner.
+I'm Gavin. I'm a learner.
+</div>
 <!-- Handle Language Change -->
 <script type="text/javascript">
     var $zh = document.querySelector(".zh");
