@@ -13,11 +13,11 @@
 
     <title>
         
-          Archives - Gavin的博客 | Gavin&#39;s Blog
+          TDD总结 - Gavin的博客 | Gavin&#39;s Blog
         
     </title>
 
-    <link rel="canonical" href="https://GavintheAmateur.github.io/archives/">
+    <link rel="canonical" href="https://GavintheAmateur.github.io/2019/07/20/TDD总结/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -154,209 +154,123 @@
 
 
     <!-- Main Content -->
-    <!-- Page Header -->
-<header class="intro-header" style="background-image: url('/img/tag-bg.jpg')">
+    
+<!-- Image to hack wechat -->
+<!-- <img src="https://GavintheAmateur.github.io/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        background-image: url('/img/home-bg.jpg')
+    }
+</style>
+<header class="intro-header" >
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <h1>Archives</h1>
-                    <!--<hr class="small">-->
-                    <span class="subheading">Hey, this is Archives.</span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                          <a class="tag" href="/tags/#TDD" title="TDD">TDD</a>
+                        
+                    </div>
+                    <h1>TDD总结</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        Posted by Gavin on
+                        2019-07-20
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <!-- 归档列表 -->
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
 
-            
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
 
-             <!-- 归档列表 -->
+                <p>测试流程：fail &gt; pass &gt; refactor/optimize的顺序<br>测试原则：<br>    每次只测单一的功能点和业务逻辑<br>    测试的是业务逻辑，而非方法<br>    测试必须可重复，结果保持一致<br>    测试要全面，考虑一下：正确的逻辑；正确逻辑的反面；边际；错误的条件<br>Junit Asserts:<br>    AssertTrue;<br>    AssertFalse;<br>    Assert;<br>    AssertNull;<br>    AssertNotNull;<br>    AssertThat: e.g.:  assertThat(email,StringContains.containsString(“%”));<br>有外部依赖的功能测试：<br>    Stub：自己在本地另建依赖接口的实例；<br>    行为测试:Mock and Mockito<br>        MyClass myClass = mock (MyClass.class);<br>        when(myClass.myMethod(params)).thenReturn(return-value);<br>        verify(myClass, times(?)).myMethod(params);<br>    Stubs are used to test data;<br>    Mocks are used to test Mockito;</p>
 
 
+                <hr>
 
-            
-            <div class="one-tag-list">
-                <span class="fa fa-calendar-times-o listing-seperator" id="2020">
-                    <span class="tag-text">2020</span>
-                </span>
-                <ul>
-                
-                  <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-                 <li >
-                    07-11
-                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    <a href="/2020/07/11/项目踩过的坑/" style="color: #0085a1">
-                        <span>
-                            项目踩过的坑
-                        </span>
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                </li>
                 
 
+                <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/2020/07/11/项目踩过的坑/" data-toggle="tooltip" data-placement="top" title="项目踩过的坑">&larr; Previous Post</a>
+                        </li>
+                    
+                    
+                        <li class="next">
+                            <a href="/2019/07/18/好文转载/" data-toggle="tooltip" data-placement="top" title="好文转载">Next Post &rarr;</a>
+                        </li>
+                    
                 </ul>
-            </div>
-            
-            <div class="one-tag-list">
-                <span class="fa fa-calendar-times-o listing-seperator" id="2019">
-                    <span class="tag-text">2019</span>
-                </span>
-                <ul>
-                
-                  <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-                 <li >
-                    07-20
-                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    <a href="/2019/07/20/TDD总结/" style="color: #0085a1">
-                        <span>
-                            TDD总结
-                        </span>
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                </li>
-                
-                  <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-                 <li >
-                    07-18
-                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    <a href="/2019/07/18/好文转载/" style="color: #0085a1">
-                        <span>
-                            好文转载
-                        </span>
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                </li>
+
                 
 
+                
+
+            </div>
+    <!-- Side Catalog Container -->
+        
+
+    <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/tags/#TDD" title="TDD">TDD</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+
+                    
+                        <li><a href="http://blog.gavin.rocks" target="_blank">gavin&#39;s Blog</a></li>
+                    
+                        <li><a href="http://huangxuan.me" target="_blank">Hux Blog</a></li>
+                    
                 </ul>
+                
             </div>
-            
-            <div class="one-tag-list">
-                <span class="fa fa-calendar-times-o listing-seperator" id="2018">
-                    <span class="tag-text">2018</span>
-                </span>
-                <ul>
-                
-                  <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-                 <li >
-                    07-11
-                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    <a href="/2018/07/11/To-do-list/" style="color: #0085a1">
-                        <span>
-                            To do list
-                        </span>
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                </li>
-                
-                  <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-                 <li >
-                    07-11
-                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    <a href="/2018/07/11/常用Documentation链接/" style="color: #0085a1">
-                        <span>
-                            常用Documentation链接
-                        </span>
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                </li>
-                
-                  <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-                 <li >
-                    07-11
-                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    <a href="/2018/07/11/Linux实用命令收集/" style="color: #0085a1">
-                        <span>
-                            Linux实用命令收集
-                        </span>
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                </li>
-                
-
-                </ul>
-            </div>
-            
-            <div class="one-tag-list">
-                <span class="fa fa-calendar-times-o listing-seperator" id="2017">
-                    <span class="tag-text">2017</span>
-                </span>
-                <ul>
-                
-                  <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-                 <li >
-                    03-10
-                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    <a href="/2017/03/10/Struts2-ValueStack取值顺序实验/" style="color: #0085a1">
-                        <span>
-                            Struts2 ValueStack取值顺序实验
-                        </span>
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                </li>
-                
-
-                </ul>
-            </div>
-            
-            <div class="one-tag-list">
-                <span class="fa fa-calendar-times-o listing-seperator" id="2016">
-                    <span class="tag-text">2016</span>
-                </span>
-                <ul>
-                
-                  <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-                 <li >
-                    03-08
-                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    <a href="/2016/03/08/Welcome-to-iStudy/" style="color: #0085a1">
-                        <span>
-                            Welcome to iStudy
-                        </span>
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                </li>
-                
-
-                </ul>
-            </div>
-            
-
 
         </div>
     </div>
-</div>
+</article>
+
+
+
+
+
+
+
 
 
     <!-- Footer -->
