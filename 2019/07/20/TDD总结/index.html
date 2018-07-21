@@ -90,14 +90,14 @@
 
                         
                         <li>
-                            <a href="/about/">About</a>
+                            <a href="/archives/">Archives</a>
                         </li>
                         
                     
 
                         
                         <li>
-                            <a href="/archives/">Archives</a>
+                            <a href="/about/">About</a>
                         </li>
                         
                     
@@ -198,7 +198,7 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <p>测试流程：fail &gt; pass &gt; refactor/optimize的顺序<br>测试原则：<br>    每次只测单一的功能点和业务逻辑<br>    测试的是业务逻辑，而非方法<br>    测试必须可重复，结果保持一致<br>    测试要全面，考虑一下：正确的逻辑；正确逻辑的反面；边际；错误的条件<br>Junit Asserts:<br>    AssertTrue;<br>    AssertFalse;<br>    Assert;<br>    AssertNull;<br>    AssertNotNull;<br>    AssertThat: e.g.:  assertThat(email,StringContains.containsString(“%”));<br>有外部依赖的功能测试：<br>    Stub：自己在本地另建依赖接口的实例；<br>    行为测试:Mock and Mockito<br>        MyClass myClass = mock (MyClass.class);<br>        when(myClass.myMethod(params)).thenReturn(return-value);<br>        verify(myClass, times(?)).myMethod(params);<br>    Stubs are used to test data;<br>    Mocks are used to test Mockito;</p>
+                <p>测试流程：fail &gt; pass &gt; refactor/optimize的顺序<br>测试原则：<br>    每次只测单一的功能点和业务逻辑<br>    测试的是业务逻辑，而非方法<br>    测试必须可重复，结果保持一致<br>    测试要全面，考虑一下：正确的逻辑；正确逻辑的反面；边际；错误的条件<br>Junit Asserts:<br>    AssertTrue;<br>    AssertFalse;<br>    Assert;<br>    AssertNull;<br>    AssertNotNull;<br>    AssertThat: e.g.:  assertThat(email,StringContains.containsString(“%”));<br>有外部依赖的功能测试：<br>    Stub：自己在本地另建依赖接口的实例；<br>    行为测试:Mockito  (引入： import static org.mockito.Mockito.*;)<br>        MyClass myClass = Mockito.mock (MyClass.class);<br>        Mockito.when(myClass.myMethod(params)).thenReturn(return-value);<br>        Mockito.verify(myClass, times(?)).myMethod(params);<br>    Stubs are used to test data:<br>        mock();<br>        when().thenReturn();<br>    Mocks are used to test behaviour:<br>       mock();<br>       verify(Type,times()).method();</p>
 
 
                 <hr>
