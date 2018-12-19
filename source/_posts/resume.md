@@ -1,3 +1,11 @@
+---
+layout:     post
+title:      "个人简历"
+subtitle:   "求职中：初级Java Web工程师/前端工程师"
+date:       2000-01-01 12:00:00
+author:     "Gavin"
+---
+
 # <center>李忠林
 <center>电话: 18983763517  
 邮箱: [gavinneo@126.com](mailto:gavinneo@126.com)  
