@@ -90,6 +90,13 @@
 
                         
                         <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
                             <a href="/archives/">Archives</a>
                         </li>
                         
@@ -98,13 +105,6 @@
                         
                         <li>
                             <a href="/categories/">Categories</a>
-                        </li>
-                        
-                    
-
-                        
-                        <li>
-                            <a href="/about/">About</a>
                         </li>
                         
                     
@@ -206,7 +206,7 @@
 <p>October 2018  </p>
 <p>10/21</p>
 <p><hr><br>在IDEA里启动Springboot无法自动编译热部署了，添加了devtools和maven plugin,最后查到需要编译器配置，如下:<br><a href="https://www.jianshu.com/p/4d8aa6dfd103" target="_blank" rel="noopener">IntelliJ IDEA 使用spring-boot-devtools热部署无效解决办法</a><br>pom文件配置:<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-devtools<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">optional</span>&gt;</span>true<span class="tag">&lt;/<span class="name">optional</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-maven-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">fork</span>&gt;</span>true<span class="tag">&lt;/<span class="name">fork</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>Spring boot controller不生效：看看controller类上面加@Controller注解没<br>Spring boot controller能进去但是返回404error如下：<br>Whitelabel Error Page<br>This application has no explicit mapping for /error, so you are seeing this as a fallback.<br>There was an unexpected error (type=Not Found, status=404)<br>查看Application类的放置位置，要在根路径，或者添加@componentscan注解。详见:<br><a href="https://www.cnblogs.com/oskyhg/p/6683629.html" target="_blank" rel="noopener">spring boot 扫描不到自定义Controller</a><br>另外，还要注意properties或者yaml配置了spring.mvc.view.suffix=”.html”这样<br>10/23<br>spring boot actuator<br>spring cloud netflix eureka server<br>10/24<br>eureka client, consumer<br>10/25<br>spring cloud ribbon</p>
+<p>Spring boot controller不生效：看看controller类上面加@Controller注解没<br>Spring boot controller能进去但是返回404error如下：<br>Whitelabel Error Page<br>This application has no explicit mapping for /error, so you are seeing this as a fallback.<br>There was an unexpected error (type=Not Found, status=404)<br>查看Application类的放置位置，要在根路径，或者添加@componentscan注解。详见:<br><a href="https://www.cnblogs.com/oskyhg/p/6683629.html" target="_blank" rel="noopener">spring boot 扫描不到自定义Controller</a><br>另外，还要注意properties或者yaml配置了spring.mvc.view.suffix=”.html”这样<br>10/23<br>spring boot actuator<br>spring cloud netflix eureka server<br>10/24<br>eureka client, consumer<br>10/25<br>spring cloud ribbon<br>12/29<br>一个可用的跨域代理(<a href="https://cors-anywhere.herokuapp.com/" target="_blank" rel="noopener">https://cors-anywhere.herokuapp.com/</a>)</p>
 
 
                 <hr>
